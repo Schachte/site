@@ -1,16 +1,237 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	line-height: 1;
+  background-color: #102A35;
+  padding: 10px;
+  color: #D0D0D0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* end reset */
+/* ---------------- */
+
+.container {
+  max-width: 700px;
 }
 
-* {
-  box-sizing: border-box;
+h1 {
+  font-family: 'Playfair Display';
+  font-style: bold;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: .85em;
+  color: #54DD82;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  max-width: 750px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  font-style: nonte;
+}
+
+.welcome {
+  padding-top: 1.2rem;
+  font-style: italic;
+  font-size: .75rem;
+}
+
+.navigation > div {
+    padding-left: 3rem;
+    font-size: .7rem;
+    font-family: 'Open Sans';
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    max-width: 750px;
+}
+
+.navigation > div:hover {
+  cursor: pointer;
+  opacity: .2;
+}
+
+.posts {
+  margin-top: 3rem;
+}
+
+.posts > ul  {
+  width: 100%;
+  border: 1px solid #487A87;
+  max-width: 700px;
+}
+
+.post:first-child {
+  border-top: 2px dotted #487A87;
+}
+
+.post {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Open Sans';
+  font-size: .9rem;
+  padding-bottom: .35em;
+  padding-top: .35em;
+  border-bottom: 2px dotted #487A87;;
+  align-items: center;
+  height: 2.5rem;
+  align-items: center;
+}
+
+.post:hover {
+  background-color: #183541;
+  cursor: pointer;
+}
+
+.date {
+  opacity: .3;
+  font-size: .65rem;
+}
+
+.blog_post {
+  margin-top: 3rem;
+}
+
+.logo:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+.footer {
+  position: fixed;
+  bottom: 1rem;
+  max-width: 700px;
+  font-size: .8rem;
+}
+
+.post_header {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #487A87;
+  border-top: 1px dotted #487A87;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.post_title {
+  font-size: 1.5rem;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+
+.post_date {
+  opacity: .5;
+  font-family: 'Open Sans';
+  font-size: .75rem;
+}
+
+.post_body {
+  margin-top: 3rem;
+  font-size: .9rem;
+}
+
+.post_body > h1 {
+  margin-bottom: 1.65rem;
+  /* font-style: italic; */
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+pre {
+  border: 1px solid #487A87;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  line-height: 1.3rem;
+}
+
+pre > * > span {
+  font-family: 'Source Code Pro';
+  font-size: .8rem;
+}
+
+code {
+  background-color: rgb(252, 178, 117);
+  color: black;
+  padding-left: .1rem;
+  padding-right: .1rem;
+  border-radius: 3px;
+}
+
+blockquote {
+  margin-left: 1rem;
+  border-left: 4px solid grey;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-style: italic;
+  margin-top: 1.5rem;
+  opacity: .8;
+  margin-bottom: 1.5rem;
 }
