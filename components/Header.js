@@ -16,12 +16,12 @@ export default function Header() {
         <Link href="/">
           <div>Posts</div>
         </Link>
-        <Link href="/">
+        <a href="https://youtube.com/thesimpleengineer">
           <div>Videos</div>
-        </Link>
-        <Link href="/">
+        </a>
+        <a href="mailto:code@ryan-schachte.com">
           <div>Contact</div>
-        </Link>
+        </a>
       </div>
     </header>
   );
