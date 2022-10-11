@@ -5,7 +5,7 @@ export default function Header() {
     <header className="header">
       <Link href="/">
         <div className="logo">
-          <h1>Ryan Schachte</h1>
+          <h1>ryan.schachte</h1>
           <h3 className="subtitle">{'echo "random thoughts" > /dev/null'} </h3>
         </div>
       </Link>
@@ -13,15 +13,15 @@ export default function Header() {
         <Link href="/">
           <div>Home</div>
         </Link>
-        <Link href="/">
-          <div>Posts</div>
+        <Link href="/about">
+          <div>About</div>
         </Link>
-        <a href="https://youtube.com/thesimpleengineer">
-          <div>Videos</div>
-        </a>
-        <a href="mailto:code@ryan-schachte.com">
-          <div>Contact</div>
-        </a>
+        <div>
+          <a href="https://youtube.com/thesimpleengineer">Videos</a>
+        </div>
+        <div>
+          <a href="mailto:code@ryan-schachte.com">Contact</a>
+        </div>
       </div>
     </header>
   );

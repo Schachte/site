@@ -2,7 +2,7 @@ import React from "react";
 
 import rangeParser from 'parse-numeric-range'
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import d from "react-syntax-highlighter/dist/cjs/styles/prism/nord";
+import d from "react-syntax-highlighter/dist/cjs/styles/prism/vsc-dark-plus";
 
 const CodeBlock = {
   code({ node, inline, className, children, ...props }) {

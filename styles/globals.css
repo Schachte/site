@@ -64,7 +64,8 @@ table {
 }
 
 h1 {
-  font-family: 'Playfair Display';
+  /* font-family: 'Playfair Display'; */
+  font-family: "Source Code Pro";
   font-style: bold;
   font-weight: 700;
 }
@@ -91,7 +92,7 @@ h3 {
 .subtitle {
   margin-top: 10px;
   font-size: .85em;
-  color: #54DD82;
+  color: #fbad41;
 }
 
 .header {
@@ -116,7 +117,7 @@ h3 {
 
 .navigation > div {
     padding-left: 3rem;
-    font-size: .7rem;
+    font-size: .9rem;
     font-family: 'Open Sans';
     text-decoration: underline;
     display: flex;
@@ -209,7 +210,8 @@ h3 {
 
 .post_body {
   margin-top: 3rem;
-  font-size: .9rem;
+  font-size: 1rem;
+  font-family: "Source Code Pro";
 }
 
 .post_body > p {
@@ -277,7 +279,11 @@ blockquote {
   margin-bottom: 1rem;
   font-size: 1.5em;
   font-weight: 600;
-  color: orange;
+  color: #fbad41;
+}
+
+p {
+  margin-top: 1rem;
 }
 
 @media (max-width: 800px) {
@@ -333,4 +339,17 @@ blockquote {
 .post_date {
   margin-top: 1rem;
 }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #D0D0D0;
+}
+
+a[href^="mailto:"]
+{ 
+  color: #D0D0D0;
 }
