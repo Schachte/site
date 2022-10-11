@@ -22,6 +22,10 @@ export default function AboutPage() {
             This is my blog where I post about random thoughts, code snippets,
             technology or low-level stuff. It&#39;s a journal for the public. It&#39;s meant to be simple, fast and no bullshit.
           </p>
+
+          <p>
+            I live in Santa Barbara, CA. If you ever want to grab a coffee, drop me a <u><a href="mailto:code@ryan-schachte.com">note!</a></u>
+          </p>
         </div>
       </div>
     </>

@@ -71,15 +71,15 @@ h1 {
 }
 
 h1 {
-  font-size: 2.5em;
-  font-weight: 600;
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 h3 {
@@ -91,7 +91,7 @@ h3 {
 
 .subtitle {
   margin-top: 10px;
-  font-size: .85em;
+  font-size: .75em;
   color: #fbad41;
 }
 
@@ -211,7 +211,8 @@ h3 {
 .post_body {
   margin-top: 3rem;
   font-size: 1rem;
-  font-family: "Source Code Pro";
+  font-family: 'Open Sans';
+  
 }
 
 .post_body > p {
@@ -353,3 +354,5 @@ a[href^="mailto:"]
 { 
   color: #D0D0D0;
 }
+
+a { color: inherit; } 
