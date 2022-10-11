@@ -8,7 +8,7 @@ function Blog({ Component, pageProps }) {
   <div className="container">
     <Header />
     <Component {...pageProps} />
-    <Footer />
+    {/* <Footer /> */}
   </div>
   )
 }
