@@ -249,16 +249,8 @@ pre > * > span {
   font-size: .8rem;
 }
 
-/* code {
-  background-color: rgb(252, 178, 117);
-  color: black;
-  padding-left: .1rem;
-  padding-right: .1rem;
-  border-radius: 3px;
-} */
-
 img {
-  max-width: 700px;
+  max-width: 100%;
   margin: 1rem 0rem 1rem;
 }
 
@@ -280,4 +272,59 @@ blockquote {
   font-size: 1.5em;
   font-weight: 600;
   color: orange;
+}
+
+@media (max-width: 800px) {
+  .navigation {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: none;
+    margin-left: none;
+    font-style: nonte;
+    height: 50px;
+    border-top: 1px solid #487A87;
+    border-bottom: 1px solid #487A87;
+    margin-top: 1.5rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  body {
+    margin-left: 0rem;
+  margin-right: 0rem;
+  }
+
+  .navigation > div {
+    padding-left: 0rem;
+    font-size: 1.0rem;
+    font-family: 'Open Sans';
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    max-width: 750px;
+}
+
+.post_header {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #487A87;
+  border-top: 1px dotted #487A87;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.post_date {
+  margin-top: 1rem;
+}
 }
