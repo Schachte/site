@@ -7,7 +7,7 @@ export default function AboutPage() {
         </div>
         <div className="post_body">
           <p>
-            👋, I'm Ryan Schachte. I'm a computer systems engineer at{" "}
+            👋, I&#39;m Ryan Schachte. I&#39;m a computer systems engineer at{" "}
             <u>
               <a href="https://cloudflare.com">Cloudflare</a>
             </u>{" "}
@@ -20,7 +20,7 @@ export default function AboutPage() {
 
           <p>
             This is my blog where I post about random thoughts, code snippets,
-            technology or low-level stuff. It's a journal for the public. It's meant to be simple, fast and no bullshit.
+            technology or low-level stuff. It&#39;s a journal for the public. It&#39;s meant to be simple, fast and no bullshit.
           </p>
         </div>
       </div>
