@@ -232,10 +232,15 @@ ol, ul {
 
 .post_body > h1 {
   margin-bottom: 1.65rem;
-  /* font-style: italic; */
   font-family: 'Open Sans';
   font-weight: 500;
   font-size: 1.4rem;
+}
+
+.post_body > h1,h2,h3,h4 {
+  margin-bottom: 1.65rem;
+  font-family: 'Open Sans';
+  font-weight: 500;
 }
 
 pre {
