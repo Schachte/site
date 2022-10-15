@@ -3,7 +3,7 @@ import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import dynamic from "next/dynamic";
 import dark from 'react-syntax-highlighter/dist/cjs/styles/prism/duotone-earth'
-import light from 'react-syntax-highlighter/dist/cjs/styles/prism/duotone-light'
+import light from 'react-syntax-highlighter/dist/cjs/styles/prism/nord'
 
 const CodeBlockDark = {
   code({ node, inline, className, children, ...props }) {

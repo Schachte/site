@@ -4,7 +4,7 @@ export default function AboutPage() {
     <>
       <div className={styles["blog_post"]}>
         <div className={styles["post_header"]}>
-          <div className={styles["post_title"]} style={{borderBottom: "5px solid #f7f8fb", paddingBottom: "10px"}}>About</div>
+          <div className={styles["post_title"]} style={{borderBottom: "5px solid var(--link-hover)", paddingBottom: "10px"}}>About</div>
         </div>
         <div className={styles["post_body"]}>
           <p>

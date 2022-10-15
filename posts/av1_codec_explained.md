@@ -28,7 +28,7 @@ When modeling nested data, this is a great data structure to leverage due to the
 
 ### Visualizing From Markdown To HTML
 
-![](/images/recursion-toc/viz2.png)
+![](/images/viz.png)
 
 As we analyze the above image, we really have a 2-step process we need to execute before we obtain our final result:
 

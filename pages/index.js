@@ -9,7 +9,10 @@ import Link from "next/link";
 import path from "path";
 import matter from "gray-matter";
 
+import { useState } from "react";
+
 export default function Home({ posts }) {
+
   return (
     <>
       <Welcome />
