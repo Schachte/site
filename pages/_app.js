@@ -17,10 +17,9 @@ function Blog({ Component, pageProps }) {
   // }, [theme]);
 
   const theme = "light"
-
   return (
     <div className={"container main"}>
-      {/* <DynamicHeader toggleTheme={() => console.log("hi")} /> */}
+      <DynamicHeader toggleTheme={() => console.log("hi")} />
       <Component theme={theme} {...pageProps} />
     </div>
   )

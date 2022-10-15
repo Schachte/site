@@ -187,14 +187,14 @@ ul > li {
   padding-bottom: 1rem;
 }
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
   body {
-    margin: none;
+    margin: 0px;
     padding: 15px;
   }
 
   .container {
-    margin: none;
+    margin: 0px;
     width: 100%;
   }
 }
