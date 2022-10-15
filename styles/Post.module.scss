@@ -89,3 +89,20 @@
 .link {
     text-decoration: none;
 }
+
+@media (max-width: 1000px) {
+    .post {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0rem;
+    }
+
+    .title {
+        margin-top: 1rem;
+        margin-left: 0rem;
+    }
+
+    .post_header {
+        text-align: center;
+    }
+}

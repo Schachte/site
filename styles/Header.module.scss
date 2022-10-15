@@ -84,11 +84,10 @@
         align-items: center;
         margin: 0 auto;
         margin-top: 1rem;
-        font-size: .9rem;
+        font-size: .85rem;
 
         >div {
             padding: 1rem;
-
             &:hover {
                 background-color: var(--link-hover);
                 border-radius: 5px;
