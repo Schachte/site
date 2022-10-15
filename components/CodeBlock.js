@@ -30,8 +30,6 @@ const CodeBlockDark = {
 
 const CodeBlockLight = {
   code({ node, inline, className, children, ...props }) {
-    console.log('light')
-
     const match = /language-(\w+)/.exec(className || "");
 
     return !inline && match ? (

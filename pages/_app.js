@@ -7,44 +7,20 @@ const DynamicHeader = dynamic(() => import("../components/Header"), {
   ssr: false,
 });
 
-
 function Blog({ Component, pageProps }) {
+  // const [theme, setActiveTheme] = useState(document.body.dataset.theme);
+  // const inactiveTheme = theme === "light" ? "dark" : "light";
 
-  const [theme, setTheme] = useState('');
+  // useEffect(() => {
+  //   document.body.dataset.theme = theme;
+  //   window.localStorage.setItem("theme", theme);
+  // }, [theme]);
 
-  // sync the changed theme value to local storage and body data attribute
-  useEffect(() => {
-    if (window.localStorage.getItem("theme") != undefined) {
-      document.body.dataset.theme = window.localStorage.getItem("theme");
-      setTheme(window.localStorage.getItem("theme"))
-      return
-    } 
-
-    if (window.matchMedia) {
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        window.localStorage.setItem("theme", 'dark');
-        document.body.dataset.theme = theme;
-        setTheme('dark')
-      } else {
-        window.localStorage.setItem("theme", 'light');
-        document.body.dataset.theme = theme;
-        setTheme('light')
-      }
-    }
-  }, [theme]);
-
-  const toggleTheme = () => {
-    console.log('them')
-    if (theme === 'dark') {
-      setTheme('light')
-      return
-    }
-    setTheme('dark')
-  };
+  const theme = "light"
 
   return (
     <div className={"container main"}>
-      <DynamicHeader toggleTheme={toggleTheme} />
+      <DynamicHeader toggleTheme={() => console.log("hi")} />
       <Component theme={theme} {...pageProps} />
     </div>
   )
