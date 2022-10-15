@@ -1,11 +1,12 @@
+import styles from '../styles/Post.module.scss'
 export default function AboutPage() {
   return (
     <>
-      <div className="blog_post">
-        <div className="post_header">
-          <div className="post_title">About</div>
+      <div className={styles["blog_post"]}>
+        <div className={styles["post_header"]}>
+          <div className={styles["post_title"]} style={{borderBottom: "5px solid #f7f8fb", paddingBottom: "10px"}}>About</div>
         </div>
-        <div className="post_body">
+        <div className={styles["post_body"]}>
           <p>
             👋, I&#39;m Ryan Schachte. I&#39;m a computer systems engineer at{" "}
             <u>

@@ -1,15 +1,19 @@
 import Link from "next/link";
+import styles from '../styles/Header.module.scss'
 
-export default function Header() {
+export default function Header({ toggleTheme }) {
+
   return (
-    <header className="header">
-      <Link href="/">
-        <div className="logo">
-          <h1>ryan.schachte</h1>
-          <h3 className="subtitle">{'echo "random thoughts" > /dev/null'} </h3>
-        </div>
-      </Link>
-      <div className="navigation">
+    <header className={styles["header"]}>
+      <div className={styles["logo"]}>
+        <Link href="/">
+          <div className={styles["logo"]}>
+            <h1>👾 Ryan Schachte</h1>
+          </div>
+        </Link>
+      </div>
+
+      <div className={styles["navigation"]}>
         <Link href="/">
           <div>Home</div>
         </Link>
@@ -21,6 +25,9 @@ export default function Header() {
         </div>
         <div>
           <a href="mailto:code@ryan-schachte.com">Contact</a>
+        </div>
+        <div onClick={toggleTheme}>
+          🌙
         </div>
       </div>
     </header>

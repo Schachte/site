@@ -1,6 +1,7 @@
 ---
 title: 'Dynamic table of contents using recursion trees'
 date: 'January 4th, 2022'
+tags: algorithms, recursion
 ---
 
 # Background

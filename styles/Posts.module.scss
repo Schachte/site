@@ -1,0 +1,29 @@
+.post {
+    padding: 1rem;
+    margin-left: -1rem;
+
+    &:hover {
+        background-color: var(--link-hover);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+.posts {
+    margin-top: 1rem;
+
+    &:hover {
+        .date {
+            color: var(--accent-color);
+        }
+    }
+}
+
+.date {
+    font-size: .75rem;
+}
+
+.title {
+    margin-left: 3rem;
+    font-weight: 600;
+}

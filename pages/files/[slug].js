@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import CodeBlock from "../../components/CodeBlock";
+import { CodeBlockLight, CodeBlockDark } from "../../components/CodeBlock";
 import ReactMarkdown from "react-markdown";
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 import tsx from 'react-syntax-highlighter/dist/cjs/languages/prism/tsx'
@@ -12,6 +12,8 @@ import markdown from 'react-syntax-highlighter/dist/cjs/languages/prism/markdown
 import json from 'react-syntax-highlighter/dist/cjs/languages/prism/json'
 import javascript from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript'
 
+import styles from '../../styles/Post.module.scss'
+
 SyntaxHighlighter.registerLanguage('tsx', tsx)
 SyntaxHighlighter.registerLanguage('typescript', typescript)
 SyntaxHighlighter.registerLanguage('scss', scss)
@@ -21,19 +23,26 @@ SyntaxHighlighter.registerLanguage('json', json)
 SyntaxHighlighter.registerLanguage('javascript', javascript)
 
 export default function PostPage({
-  frontmatter: { title, date },
+  frontmatter: { title, date, tags },
   slug,
+  theme,
   content,
 }) {
+
+  const tagList = tags.split(",")
   return (
     <>
-      <div className="blog_post">
-        <div className="post_header">
-          <div className="post_title">{title}</div>
-          <div className="post_date">{date}</div>
+      <div className={styles["blog_post"]}>
+        <div className={styles["post_header"]}>
+          <div className={styles["post_title"]}>{title}</div>
+          <div className={styles["post_date"]}>By Ryan Schachte on {date}</div>
+          <div className={styles["tags"]}>
+            {tagList.map((tag) => <span key={tag}>{tag}</span>)}
+          </div>
         </div>
-        <div className="post_body">
-          <ReactMarkdown components={CodeBlock}>{content}</ReactMarkdown>
+        <div className={styles["post_body"]}>
+          {theme === 'dark' ? <ReactMarkdown components={CodeBlockDark}>{content}</ReactMarkdown> : 
+          <ReactMarkdown components={CodeBlockLight}>{content}</ReactMarkdown>}
         </div>
       </div>
     </>

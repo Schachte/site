@@ -2,357 +2,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:wght@300;400&display=swap');
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+:root {
+  --link-hover: #f7f8fb; /* Standard links like nav, etc */
+  --darken-hover: #e8e9ea; /* Tags, buttons, etc when hover */
+  --subtext: #898f96;
+  --background-color: #ffffff;
+  --font-color: #373d43;
+  --accent-color: #373d43;
+}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+[data-theme='dark'] {
+  --font-color: #e8e9ea;
+  --link-hover: #2c2c30; /* Standard links like nav, etc */
+  --darken-hover: #3b3a3d; /* Tags, buttons, etc when hover */
+  --subtext: #898f96;
+  --background-color: #1d1f21;
+  --accent-color: #ffd378;
 }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
-  background-color: #102A35;
+  line-height: 1;
   padding: 10px;
-  color: #D0D0D0;
+  background-color: var(--background-color);
+  color: var(--font-color);
   margin-left: 2rem;
   margin-right: 2rem;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+ol,
+ul {
+  list-style: none;
 }
 
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ---------------- */
 /* end reset */
 /* ---------------- */
 
+html {
+  font-family: system-ui;
+  color: var(--font-color);
+}
+
 .container {
-  max-width: 700px;
-}
-
-h1 {
-  /* font-family: 'Playfair Display'; */
-  font-family: "Source Code Pro";
-  font-style: bold;
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 1.5em;
-  font-weight: 500;
-}
-
-h2 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 1.5em;
-  font-weight: 300;
-}
-
-h3 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 1.1em;
-  font-weight: 600;
-}
-
-.subtitle {
-  margin-top: 10px;
-  font-size: .75em;
-  color: #fbad41;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
-  max-width: 750px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: auto;
-  font-style: nonte;
-}
-
-.welcome {
-  padding-top: 1.2rem;
-  font-style: italic;
-  font-size: .75rem;
-}
-
-.navigation > div {
-    padding-left: 3rem;
-    font-size: .9rem;
-    font-family: 'Open Sans';
-    text-decoration: underline;
-    display: flex;
-    align-items: center;
-    max-width: 750px;
-}
-
-.navigation > div:hover {
-  cursor: pointer;
-  opacity: .2;
-}
-
-.posts {
-  margin-top: 3rem;
-}
-
-.posts > ul  {
-  width: 100%;
-  border: 1px solid #487A87;
-  max-width: 700px;
-}
-
-.post:first-child {
-  border-top: 2px dotted #487A87;
-}
-
-.post {
-  width: 100%;
-  max-width: 700px;
-  display: flex;
-  justify-content: space-between;
-  font-family: 'Open Sans';
-  font-size: .9rem;
-  padding-bottom: .35em;
-  padding-top: .35em;
-  border-bottom: 2px dotted #487A87;;
-  align-items: center;
-  height: 2.5rem;
-  align-items: center;
-}
-
-.post:hover {
-  background-color: #183541;
-  cursor: pointer;
-}
-
-.date {
-  opacity: .3;
-  font-size: .65rem;
-}
-
-.blog_post {
-  margin-top: 3rem;
-}
-
-.logo:hover {
-  cursor: pointer;
-  opacity: .5;
-}
-
-.footer {
-  position: fixed;
-  bottom: 1rem;
-  max-width: 700px;
-  font-size: .8rem;
-}
-
-.post_header {
-  max-width: 700px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px dotted #487A87;
-  border-top: 1px dotted #487A87;
-  align-items: center;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-}
-
-.post_title {
-  font-size: 1.5rem;
-  font-family: 'Open Sans';
-  font-weight: 600;
-}
-
-.post_date {
-  opacity: .5;
-  font-family: 'Open Sans';
-  font-size: .75rem;
-}
-
-.post_body {
-  margin-top: 3rem;
-  font-size: .8rem;
-  font-family: 'Open Sans';
-  
-}
-
-.post_body > p {
-  line-height: 1.75rem;
-}
-
-.post-body > ul {
-  list-style: circle;
-}
-
-.post-body > ul > li {
-  list-style: circle;
-}
-
-ol, ul {
-  list-style: circle;
-  padding: 1rem;
-  line-height: 1.8rem;
-}
-
-.post_body > h1 {
-  margin-bottom: 1.65rem;
-  font-family: 'Open Sans';
-  font-weight: 500;
-  font-size: 1.4rem;
-}
-
-.post_body > h1,h2,h3,h4 {
-  margin-bottom: 1.65rem;
-  font-family: 'Open Sans';
-  font-weight: 500;
-}
-
-pre {
-  border: 1px solid #487A87;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
-  line-height: 1.3rem;
-}
-
-pre > * > span {
-  font-family: 'Source Code Pro';
-  font-size: .8rem;
-}
-
-img {
-  max-width: 100%;
-  margin: 1rem 0rem 1rem;
-}
-
-blockquote {
-  margin-left: 1rem;
-  border-left: 4px solid grey;
-  padding-left: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-style: italic;
-  margin-top: 1.5rem;
-  opacity: .8;
-  margin-bottom: 1.5rem;
-}
-
-.post_body > h1,h2,h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.5em;
-  font-weight: 600;
-  color: #fbad41;
-}
-
-p {
-  margin-top: 1rem;
-}
-
-@media (max-width: 800px) {
-  .navigation {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: none;
-    margin-left: none;
-    font-style: nonte;
-    height: 50px;
-    border-top: 1px solid #487A87;
-    border-bottom: 1px solid #487A87;
-    margin-top: 1.5rem;
-  }
-
-  .header {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  body {
-    margin-left: 0rem;
-  margin-right: 0rem;
-  }
-
-  .navigation > div {
-    padding-left: 0rem;
-    font-size: 1.0rem;
-    font-family: 'Open Sans';
-    text-decoration: underline;
-    display: flex;
-    align-items: center;
-    max-width: 750px;
-}
-
-.post_header {
-  max-width: 700px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px dotted #487A87;
-  border-top: 1px dotted #487A87;
-  align-items: center;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.post_date {
-  margin-top: 1rem;
-}
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 a {
-  text-decoration: none;
+  color: inherit;
 }
 
-a:visited {
-  color: #D0D0D0;
+pre {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-a[href^="mailto:"]
-{ 
-  color: #D0D0D0;
+ul > li {
+  list-style: circle;
+  margin-left: 1rem;
+  line-height: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-a { color: inherit; } 
+@media (max-width: 800px) {}

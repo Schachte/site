@@ -1,14 +1,22 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import List from "../components/List.js";
 import fs from "fs";
+
+import styles from '../styles/Header.module.scss'
+
+import List from "../components/List.js";
+import Welcome from "../components/Welcome.js";
+
+import Link from "next/link";
 import path from "path";
 import matter from "gray-matter";
 
 export default function Home({ posts }) {
   return (
     <>
+      <Welcome />
+      <div className={styles["post-header"]}>
+        <h1>Latest Articles</h1>
+        <Link href="">View all</Link>
+      </div>
       <List posts={posts} />
     </>
   );
