@@ -3,3 +3,9 @@
   width: 65%;
   line-height: 1.5rem;
 }
+
+@media (max-width: 800px) {
+  .welcome {
+    display: none;
+  }
+}
