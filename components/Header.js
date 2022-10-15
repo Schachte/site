@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from '../styles/Header.module.scss'
+import ThemeToggle from "./ThemeToggle";
 
 export default function Header({ toggleTheme }) {
 
@@ -26,9 +27,7 @@ export default function Header({ toggleTheme }) {
         <div>
           <a href="mailto:code@ryan-schachte.com">Contact</a>
         </div>
-        <div onClick={toggleTheme}>
-          🌙
-        </div>
+      <ThemeToggle/>
       </div>
     </header>
   );
