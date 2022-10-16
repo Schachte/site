@@ -39,7 +39,7 @@ export default function AboutPage() {
 
             <div className={AboutStyles["jobs"]}>
               {Experience.map(job => {
-                const { company, title, time, description, logo } = job
+                const { company, title, time, logo } = job
                 return (
                   <div key={title} className={AboutStyles["job-entry"]}>
                     <div className={AboutStyles["company-container"]}>
