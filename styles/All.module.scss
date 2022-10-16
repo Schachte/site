@@ -1,0 +1,82 @@
+.all-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.year {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid var(--link-hover);
+}
+
+.entry {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+
+    &:hover {
+        background-color: var(--darken-hover);
+        border-radius: 5px;
+        color: var(--accent-color);
+        cursor: pointer;
+    }
+
+    &-date {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--accent-color);
+        width: 7rem;
+        display: inline-block;
+    }
+
+    &-title {
+        font-size: 1rem;
+        margin-left: 2.75rem;
+    }
+}
+
+.search-tag {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: underline;
+    padding-bottom: 5rem;
+}
+
+
+.entry-search {
+    font-size: 1.2rem;
+    padding: 1rem;
+
+    &:hover {
+        background-color: var(--darken-hover);
+        border-radius: 5px;
+        color: var(--accent-color);
+        cursor: pointer;
+    }
+
+    &-date {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--accent-color);
+        width: 7rem;
+        display: inline-block;
+    }
+
+    &-title {
+        font-size: 1rem;
+        margin-left: 2.75rem;
+    }
+}
+
+.search-header {
+    padding-bottom: 2rem;
+}

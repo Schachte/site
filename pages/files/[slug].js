@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { CodeBlockLight, CodeBlockDark } from "../../components/CodeBlock";
+import {CodeBlock} from "../../components/CodeBlock";
 import ReactMarkdown from "react-markdown";
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 import tsx from 'react-syntax-highlighter/dist/cjs/languages/prism/tsx'
@@ -11,6 +11,7 @@ import bash from 'react-syntax-highlighter/dist/cjs/languages/prism/bash'
 import markdown from 'react-syntax-highlighter/dist/cjs/languages/prism/markdown'
 import json from 'react-syntax-highlighter/dist/cjs/languages/prism/json'
 import javascript from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript'
+import Link from "next/link";
 
 import styles from '../../styles/Post.module.scss'
 
@@ -24,7 +25,6 @@ SyntaxHighlighter.registerLanguage('javascript', javascript)
 
 export default function PostPage({
   frontmatter: { title, date, tags },
-  slug,
   theme,
   content,
 }) {
@@ -37,12 +37,12 @@ export default function PostPage({
           <div className={styles["post_title"]}>{title}</div>
           <div className={styles["post_date"]}>By Ryan Schachte on {date}</div>
           <div className={styles["tags"]}>
-            {tagList.map((tag) => <span key={tag}>{tag}</span>)}
+            {tagList.map((tag) => <Link key={tag} href={`/search?tag=${tag.trim()}`}><span key={tag}>{tag}</span></Link>)}
           </div>
         </div>
         <div className={styles["post_body"]}>
-          {theme === 'dark' ? <ReactMarkdown components={CodeBlockDark}>{content}</ReactMarkdown> : 
-          <ReactMarkdown components={CodeBlockLight}>{content}</ReactMarkdown>}
+          {theme === 'dark' ? <ReactMarkdown components={CodeBlock}>{content}</ReactMarkdown> : 
+          <ReactMarkdown components={CodeBlock}>{content}</ReactMarkdown>}
         </div>
       </div>
     </>

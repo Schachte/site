@@ -172,7 +172,9 @@ html {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
+
 
 pre {
   margin-top: 2rem;

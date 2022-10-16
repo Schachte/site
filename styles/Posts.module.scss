@@ -6,34 +6,37 @@
         background-color: var(--link-hover);
         border-radius: 5px;
         cursor: pointer;
+        color: var(--accent-color);
+
     }
 }
 
 .posts {
     margin-top: 1rem;
-
-    &:hover {
-        .date {
-            color: var(--accent-color);
-        }
-    }
 }
 
 .date {
     font-size: .75rem;
+    min-width: 5rem;
+    display: inline-block;
 }
 
 .title {
     margin-left: 3rem;
+    font-size: 1.2rem;
     padding: 0rem;
     font-weight: 600;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     .post {
         display: flex;
         flex-direction: column;
         margin-left: 0rem;
+        background-color: var(--link-hover);
+        border-radius: 5px;
+        margin-top: 1rem;
+        cursor: pointer;
     }
 
     .title {

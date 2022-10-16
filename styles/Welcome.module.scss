@@ -1,11 +1,46 @@
 .welcome {
-  margin-top: 3rem;
+  margin-top: 1rem;
   width: 65%;
-  line-height: 1.5rem;
+  line-height: 2.3rem;
+}
+
+.social {
+  margin-top: 1.2rem;
+  display: flex;
+  font-size: 1.25rem;
+  opacity: .7;
+  transition: opacity .5s, margin-top .5s ease-in-out;
+  -o-transition: opaicty 0.5s linear; /* opera */
+  -ms-transition: opaicty 0.5s linear; /* IE 10 */
+  -moz-transition: opaicty 0.5s linear; /* Firefox */
+  -webkit-transition: opaicty 0.5s linear; /*safari and chrome */
+
+  a:not(:first-child) {
+    margin-left: 1.5rem;
+  }
+
+  a {
+    &:hover {
+      margin-top: -.25rem;
+      transition: .3s;
+      opacity: .5;
+    }
+  }
 }
 
 @media (max-width: 800px) {
   .welcome {
-    display: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+
+    .social {
+      font-size: 1.5rem;
+    }
+
+    p {
+      display: none;
+    }
   }
 }

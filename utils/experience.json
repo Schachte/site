@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Senior Software Engineer",
+        "company": "Cloudflare",
+        "time": "May '22 - Present",
+        "description": "",
+        "logo": "cloudflare.png"
+    },
+    {
+        "title": "Senior Software Engineer",
+        "company": "Nordstrom",
+        "time": "Feb '20 - May '22",
+        "description": "",
+        "logo": "nordstrom.png"
+    },
+    {
+        "title": "Senior Software Engineer",
+        "company": "Connexta (Acquired by Octo)",
+        "time": "Jan '18 - Feb '20",
+        "description": "",
+        "logo": "octo.png"
+    },
+    {
+        "title": "Software Engineer Intern",
+        "company": "ExxonMobil",
+        "time": "May '17 - Aug '17",
+        "description": "",
+        "logo": "xom.png"
+    },
+    {
+        "title": "Software Engineer Intern",
+        "company": "Allstate",
+        "time": "Oct '16 - May '17",
+        "description": "",
+        "logo": "allstate.png"
+    },
+    {
+        "title": "Software Engineer Intern",
+        "company": "IBM",
+        "time": "May '16 - Aug '16",
+        "description": "",
+        "logo": "ibm.svg"
+    },
+    {
+        "title": "Software Engineer Intern",
+        "company": "SimpleWan",
+        "time": "May '15 - October '15",
+        "description": "",
+        "logo": "simplewan.png"
+    },
+    {
+        "title": "Firmware Engineer Intern",
+        "company": "Intel",
+        "time": "May '15 - Aug '15",
+        "description": "Worked on the Optane memory team developing firmware for the next generation of non-voltatile storage.",
+        "logo": "intel.png"
+    }
+]

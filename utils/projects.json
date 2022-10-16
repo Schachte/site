@@ -1,0 +1,87 @@
+[
+    {
+        "title": "Blog",
+        "description": "My blog - written in Javascript with React and Next.JS. Deployed using Cloudflare Pages",
+        "link": "https://github.com/Schachte/site"
+    },
+    {
+        "title": "WIPCream",
+        "description": "A Github bot that helps limit the number of pull requests that are open to promote closing completed tickets and tickets in review.",
+        "link": "https://github.com/Schachte/WIPCream"
+    },
+    {
+        "title": "Cloudflare Stream TUS Uploader",
+        "description": "Demoing Cloudflare Stream TUS uploads for creator uploads",
+        "link": "https://github.com/Schachte/Cloudflare-Stream-Video-Upload"
+    },
+    {
+        "title": "RAFT Protocol Implementation",
+        "description": "Implemented the RAFT consensus protocol in Go",
+        "link": "https://github.com/Schachte/RaftProtocol"
+    },
+    {
+        "title": "GoCommit",
+        "description": "Kafka clone written in Go",
+        "link": "https://github.com/Schachte/GoCommit"
+    },
+    {
+        "title": "News Bot",
+        "description": "Content bot that pulls from N sources and fans out to M sinks",
+        "link": "https://github.com/Schachte/GoNewsBot"
+    },
+    {
+        "title": "Job Queue",
+        "description": "In-memory job/task queue implementation",
+        "link": "https://github.com/Schachte/JobQueue"
+    },
+    {
+        "title": "PyBlockChain",
+        "description": "Custom blockchain implementation in Python",
+        "link": "https://github.com/Schachte/PyBlockChain"
+    },
+    {
+        "title": "Crypto Lottery",
+        "description": "Decentralized lottery application running on Ethereum blockchain",
+        "link": "https://github.com/Schachte/CryptoLottery"
+    },
+    {
+        "title": "Serverless Newsletter",
+        "description": "AWS Lambda-based newsletter system for my old blog",
+        "link": "https://github.com/Schachte/ServerlessNewsletter"
+    },
+    {
+        "title": "Dynamic Markdown Parser",
+        "description": "Generates nested structure for generating dynamic anchor linking and table of contents for MDX type blogs/sites",
+        "link": "https://github.com/Schachte/Dynamic-Markdown-Parser"
+    },
+    {
+        "title": "Planit",
+        "description": "CLI book planner to hit your reading goal",
+        "link": "https://github.com/Schachte/Planit"
+    },
+    {
+        "title": "Memdoop",
+        "description": "An in-memory implementation of the Hadoop filesystem",
+        "link": "https://github.com/Schachte/Memdoop"
+    },
+    {
+        "title": "Hack Language Assembly",
+        "description": "Hack assembler from the course Nand2Tetris",
+        "link": "https://github.com/Schachte/Hack-Language-Assembler"
+    },
+    {
+        "title": "Mermrender",
+        "description": "RESTful rendering pipeline for generating sequence and UML diagrams using Mermaid for Markdown docs (Diagrams as a Service)",
+        "link": "https://github.com/Schachte/Mermrender"
+    },
+    {
+        "title": "AsciiPhile",
+        "description": "Simple Scalable Object-Based Content Store",
+        "link": "https://github.com/Schachte/AsciiPhile"
+    },
+    {
+        "title": "AirBnB Data Visualizer",
+        "description": "Interactive Data Visualization for the AirBnB Dataset - 2017",
+        "link": "https://github.com/Schachte/AirBnB-Dataset-Visualization-Backend"
+    }
+]

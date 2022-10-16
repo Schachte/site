@@ -1,0 +1,91 @@
+.job-entry {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dotted var(--accent-color);
+    padding-bottom: 2rem;
+
+    &:hover {
+        opacity: .5;
+    }
+
+    .company-container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__company {
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: var(--accent-color);
+        margin-left: 1rem;
+    }
+
+    img {
+        max-width: 20px;
+    }
+
+    &__time {
+        margin-top: .5rem;
+        color: var(--subtext);
+    }
+
+    &__description {
+        margin-top: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+.project-entry {
+
+    &:first-child {
+        margin-top: 20px;
+    }
+
+    padding: .5rem;
+    border: 2px solid transparent;
+
+    &:hover {
+        background-color: var(--darken-hover);
+        border: 2px solid var(--accent-color);
+        border-radius: 5px;
+        padding: .5rem;
+        cursor: pointer;
+    }
+
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.project_name {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+.project_description {
+    line-height: 1.3rem;
+    margin-top: 1.3rem;
+    display: inline-block;
+    color: var(--subtext);
+}
+
+.github {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    border: none !important;
+
+    &:hover {
+        cursor: pointer;
+        opacity: .5;
+    }
+}
