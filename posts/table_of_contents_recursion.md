@@ -11,13 +11,13 @@ In this post, I walk through an algorithm I designed to parse your blog posts dy
 
 We'll be discussing how to model the data, recurse through it and do dynamic HTML code generation.
 
-<!-- ![](/images/toc/example.png) -->
+![](/images/toc/example.png)
 
 ## What is a Recursion tree?
 
 A recursion tree shows breaks in your algorithm where a recurrence is iterated upon. Thinking about a table of contents in terms of a recursion tree is helpful because having nested content can be easily modeled as a tree.
 
-<!-- ![](/images/toc/tree.png) -->
+![](/images/toc/tree.png)
 
 The above photo demonstrates how different branches of recursion can be visualized when describing a particular recurrence relation. This is a great exercise for breaking down and computing the time complexity of a particular algorithm.
 
@@ -30,7 +30,7 @@ When modeling nested data, this is a great data structure to leverage due to the
 
 ### Visualizing From Markdown To HTML
 
-<!-- ![](/images/toc/viz.png) -->
+![](/images/toc/viz.png)
 
 As we analyze the above image, we really have a 2-step process we need to execute before we obtain our final result:
 

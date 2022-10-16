@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import {CodeBlock} from "../../components/CodeBlock";
+import { CodeBlock } from "../../components/CodeBlock";
 import ReactMarkdown from "react-markdown";
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 import tsx from 'react-syntax-highlighter/dist/cjs/languages/prism/tsx'
@@ -41,8 +41,7 @@ export default function PostPage({
           </div>
         </div>
         <div className={styles["post_body"]}>
-          {theme === 'dark' ? <ReactMarkdown components={CodeBlock}>{content}</ReactMarkdown> : 
-          <ReactMarkdown components={CodeBlock}>{content}</ReactMarkdown>}
+          <ReactMarkdown components={CodeBlock}>{content}</ReactMarkdown>
         </div>
       </div>
     </>
