@@ -5,6 +5,12 @@
         border-bottom: 4px solid var(--accent-color);
         text-decoration: none !important;
     }
+
+    code {
+        background-color: var(--darken-hover);
+        padding: .25rem;
+        border-radius: 2px;
+    }
 }
 
 .post_title {
@@ -120,6 +126,32 @@
 }
 
 .code-tag {
+    height: 2rem;
+    background-color: #474e5e;
+    border-radius: 0.3rem .3rem 0rem 0rem;
     width: 100%;
-    background-color: 'yellow';
+    margin-top: -23px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+
+    span {
+        margin-left: 1rem;
+        font-size: .7rem;
+        opacity: .7;
+    }
+}
+
+.copy {
+    margin-right: 1rem;
+    &:hover {
+        opacity: .6;
+        cursor: pointer;
+    }
+
+    span {
+        margin-right: .5rem;
+    }
 }

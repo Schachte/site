@@ -47,8 +47,10 @@ When we consider _how_ the data should be represented, we really just need an ea
 ```javascript
 
 /**
- * Notice, this representation of our groups maintain the chunks of data. There could be useful reasons to employ this structure, but it 
- * was too complex for this task. I maintain this as the primary output because I know modifying this output is easy
+ * Notice, this representation of our groups maintain the chunks of data. 
+ * There could be useful reasons to employ this structure, but it 
+ * was too complex for this task. I maintain this as the primary output 
+ * because I know modifying this output is easy
  **/
 
 [
@@ -79,8 +81,10 @@ When we consider _how_ the data should be represented, we really just need an ea
 ```javascript
 
 /**
- * This is a simple flat-map on the above data, we'll look at the code to achieve this later in the post. This is a simpler version of showing all our data
- * in a single dimensional vector.
+ * This is a simple flat-map on the above data, we'll look 
+ * at the code to achieve this later in the post. This is 
+ * a simpler version of showing all our data in a single
+ * dimensional vector.
  **/
 
 [
@@ -149,7 +153,7 @@ If this format was sufficient, we would get the flat structure we saw above. If 
 
 In order to do this, we need to take the flat structure from above and recurse over it like so:
 
-```js filename=recursiveMarkdownParser.js showlinenumbers="true"
+```javascript filename=recursiveMarkdownParser.js showlinenumbers="true"
 
 const mdRecursiveSubRoutine = (data, existingGroup = [], solution = []) => {
 
