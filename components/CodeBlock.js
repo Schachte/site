@@ -20,20 +20,22 @@ const CodeBlock = {
         {String(children).replace(/\n$/, "")}
       </SyntaxHighlighter>
     ) : (
-      <code className={className} {...props}>
-        {children}
-      </code>
+
+        <code className={className} {...props}>
+          {children}
+        </code>
+
     );
   },
 
   img: ({ src }) => {
     return (
-        <Image
-          src={src}
-          width={3000}
-          height={1800}
-          objectFit={"contain"}
-        />
+      <Image
+        src={src}
+        width={3000}
+        height={1800}
+        objectFit={"contain"}
+      />
     )
   }
 };
