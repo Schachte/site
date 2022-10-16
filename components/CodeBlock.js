@@ -33,20 +33,13 @@ const CodeBlock = {
     const className = props.children[0].props.className.split("-")[1]
     const contents = props.children[0].props.children[0]
 
-    const [copy, setCopy] = useState(false)
-
-    const copied = () => {
-      setCopy(true)
-      setTimeout(function(){setCopy(false)}, 3000);
-    }
 
     return (
       <pre style={{ position: 'relative' }}>
         <div className={styles["code-tag"]}>
           <span>language: {className}</span>
           <div className={styles["copy"]}>
-            {copy && <span>Copied</span>}
-            <CopyToClipboard text={contents} onCopy={copied}>
+            <CopyToClipboard text={contents}>
               <FontAwesomeIcon icon={faCopy} />
             </CopyToClipboard>
           </div>
