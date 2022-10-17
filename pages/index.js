@@ -23,7 +23,7 @@ export default function Home({ posts }) {
           content="Ryan Schachte is a systems programmer at Cloudflare who writes and creates videos about software engineering, low-level programming, mathematics and algorithms."
           key="desc"
         />
-                <meta
+        <meta
           property="og:image"
           content="https://ryan-schachte.com/images/face.jpg"
         />

@@ -1,12 +1,14 @@
 .post {
     padding: 1rem;
     margin-left: -1rem;
+    border-bottom: 1px solid transparent;
 
     &:hover {
         background-color: var(--link-hover);
         border-radius: 5px;
         cursor: pointer;
         color: var(--accent-color);
+        border-bottom: 1px solid var(--accent-color);
 
     }
 }
@@ -30,13 +32,18 @@
 
 @media (max-width: 800px) {
     .post {
+        // background-color: var(--link-hover);
         display: flex;
         flex-direction: column;
         margin-left: 0rem;
-        background-color: var(--link-hover);
+        border-bottom: 2px solid transparent;
         border-radius: 5px;
         margin-top: 1rem;
         cursor: pointer;
+
+        &:hover {
+            border-bottom: 2px solid var(--accent-color);
+        }
     }
 
     .title {
