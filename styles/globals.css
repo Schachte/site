@@ -177,15 +177,22 @@ a {
 
 
 pre {
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
-ul > li {
+ul, ol > li {
   list-style: circle;
+  line-height: 1.75em;
   margin-left: 1rem;
-  padding-top: 1rem;
+  padding-top: .5rem;
 }
+
+ul {
+  padding-bottom: .5rem;
+}
+
+
 
 @media only screen and (max-width: 800px) {
   body {

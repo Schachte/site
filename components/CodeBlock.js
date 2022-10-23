@@ -30,7 +30,7 @@ const CodeBlock = {
   },
 
   pre: (props) => {
-    const className = props.children[0].props.className.split("-")[1]
+    const className = props.children[0].props?.className?.split("-")[1]
     const contents = props.children[0].props.children[0]
 
 

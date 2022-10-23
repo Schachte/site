@@ -4,6 +4,15 @@ date: 'Jan 4 2022'
 tags: algorithms, recursion
 ---
 
+# Table of contents
+
+- [Background](#background)
+  - [What is a Recursion tree?](#what-is-a-recursion-tree)
+  - [Why model nested lists with trees?](#why-model-nested-lists-with-trees)
+- [Algorithm Overview](#algorithm-overview)
+  - [Markdown File Parser](#markdown-file-parser)
+  - [Converting Headings into Recursion Tree](#converting-headings-into-recursion-tree)
+
 # Background
 
 Table of contents are nice to have on a site full of complex information. However, writing an entire post then later formatting the HTML is time consuming. 
