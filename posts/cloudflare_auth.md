@@ -1,6 +1,6 @@
 ---
 title: 'Google Cloud OAuth2 and Cloudflare Workers'
-date: 'Jan 4 2022'
+date: 'Oct 22 2022'
 tags: cloud, cloudflare, google
 ---
 
