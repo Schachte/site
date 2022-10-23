@@ -108,7 +108,7 @@ export default {
 };
 ```
 
-Now that we have the skeleton of the Worker built, let's generate out OAuth token.
+Now that we have the skeleton of the Worker built, let's generate our OAuth token.
 
 ```javascript
 ...
