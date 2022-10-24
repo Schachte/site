@@ -1,5 +1,10 @@
 [
     {
+        "title": "Cloudflare OAuth Module for Google",
+        "description": "Facilitate OAuth2 token retrieval from within Cloudflare Workers",
+        "link": "https://github.com/Schachte/cloudflare-google-auth"
+    },
+    {
         "title": "Blog",
         "description": "My blog - written in Javascript with React and Next.JS. Deployed using Cloudflare Pages",
         "link": "https://github.com/Schachte/site"
