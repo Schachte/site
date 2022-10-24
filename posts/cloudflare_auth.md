@@ -4,22 +4,6 @@ date: 'Oct 22 2022'
 tags: cloud, cloudflare, google
 ---
 
-# Table of contents
-
-- [Background](#background)
-- [Implementation](#implementation)
-  - [Google Cloud Setup](#google-cloud-setup)
-  - [Cloudflare Setup](#cloudflare-setup)
-  - [Create a new Typescript Worker](#create-a-new-typescript-worker)
-  - [Deploy](#deploy)
-- [Understanding the internals](#understanding-the-internals)
-  - [What is JWT?](#what-is-jwt)
-  - [Header](#header)
-  - [Claim set](#claim-set)
-  - [Signature](#signature)
-  - [Request access token](#request-access-token)
-  - [Using the token](#using-the-token)
-
 # Background
 
 [Cloudflare Workers](https://developers.cloudflare.com/workers/) provide a wonderful alternative for deploying applications on the edge in a fast, cheap and reliable way. One thing I've found painful is communicating to Google Cloud Platform from within a Cloudflare Worker. This is mainly because there is a lot involved when generating the signed JWT for authenticating to the Google servers. 
