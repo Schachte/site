@@ -8,7 +8,6 @@
         border-radius: 5px;
         cursor: pointer;
         color: var(--accent-color);
-        border-bottom: 1px solid var(--accent-color);
 
     }
 }
@@ -25,7 +24,7 @@
 
 .title {
     margin-left: 3rem;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     padding: 0rem;
     font-weight: 600;
 }
@@ -40,14 +39,11 @@
         border-radius: 5px;
         margin-top: 1rem;
         cursor: pointer;
-
-        &:hover {
-            border-bottom: 2px solid var(--accent-color);
-        }
     }
 
     .title {
         margin-top: 1rem;
         margin-left: 0rem;
+        font-size: .9rem;
     }
 }
