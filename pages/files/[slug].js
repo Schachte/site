@@ -23,6 +23,7 @@ SyntaxHighlighter.registerLanguage('markdown', markdown)
 SyntaxHighlighter.registerLanguage('json', json)
 SyntaxHighlighter.registerLanguage('javascript', javascript)
 
+
 export default function PostPage({
   frontmatter: { title, date, tags },
   theme,
@@ -42,6 +43,8 @@ export default function PostPage({
         </div>
         <div className={styles["post_body"]}>
           <ReactMarkdown components={CodeBlock}>{content}</ReactMarkdown>
+
+          <span className="signature">Cheers!  <br/> Schachte</span>
         </div>
       </div>
     </>

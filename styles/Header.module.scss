@@ -26,15 +26,13 @@
 
 .logo {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: .8rem;
     padding-left: 2px;
     padding-right: 2px;
 
     &:hover {
         background-color: var(--link-hover);
         border-radius: 5px;
-        padding-top: 5px;
-        padding-bottom: 5px;
         cursor: pointer;
     }
 }
@@ -42,7 +40,7 @@
 .post-header {
     margin-top: 3.5rem;
     display: flex;
-    font-size: 2rem;
+    font-size: .8rem;
     font-weight: 500;
     align-items: center;
     border-bottom: 5px solid var(--link-hover);
@@ -107,7 +105,7 @@
 
     .logo {
         font-weight: 500;
-        font-size: 2rem;
+        font-size: .8rem;
         padding-left: 2px;
         padding-right: 2px;
         padding-top: 5px;

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
 
 :root {
   --link-hover: #eaedf1; /* Standard links like nav, etc */
@@ -20,7 +21,7 @@
   --accent-color: #ffd378;
 }
 
-html,
+/* html,
 body,
 div,
 span,
@@ -46,7 +47,6 @@ code,
 del,
 dfn,
 em,
-img,
 ins,
 kbd,
 q,
@@ -107,7 +107,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-}
+} */
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -183,16 +183,20 @@ pre {
 
 ul, ol > li {
   list-style: circle;
-  line-height: 1.75em;
-  margin-left: 1rem;
   padding-top: .5rem;
+  line-height: 2.2rem;
+  font-size: 1.1rem;
 }
 
 ul {
   padding-bottom: .5rem;
 }
 
-
+.signature {
+  font-family: "arizonia";
+  color: var(--accent-color);
+  font-size: 2rem;
+}
 
 @media only screen and (max-width: 800px) {
   body {

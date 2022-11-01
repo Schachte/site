@@ -54,7 +54,7 @@
     margin-top: 3rem;
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         font-weight: 600;
         padding-bottom: 1rem;
         margin-top: 2rem;
@@ -62,7 +62,7 @@
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 500;
         padding-top: 1.5rem;
         padding-bottom: 1rem;
@@ -71,7 +71,7 @@
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         font-weight: 500;
         padding-top: 1.5rem;
         padding-bottom: 1rem;
@@ -80,12 +80,12 @@
 
     p {
         margin-top: .5rem;
-        line-height: 2rem;
-        font-size: 1rem;
+        line-height: 2.2rem;
+        font-size: 1.1rem;
     }
 
     img {
-        margin-top: 1.5rem;
+        margin-top: .5rem;
         margin-bottom: 1.5rem;
         border-radius: 10px;
         max-width: 800px;
@@ -94,8 +94,25 @@
 
         &:hover {
             opacity: .7;
+            cursor: pointer;
         }
     }
+}
+
+.img-enlarge {
+    font-size: .75rem;
+    color: var(--accent-color);
+    opacity: .5;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.img-styles {
+    // box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 0rem;;
 }
 
 .link {
